@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reloadComponent';
+
+  constructor(){
+    console.log("Inside AppComponent Constructor");
+  }
+
+  ngOnInit(){
+    console.log("Loading AppComponent");
+  }
 }
