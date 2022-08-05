@@ -18,8 +18,12 @@ export class TestComponent extends CommonFunctionalityComponent implements OnIni
     console.log("Loading TestComponent")
   }
 
-  reload(){
+  reloadCurrent(){
     this.reloadComponent(true);
+  }
+
+  reloadChild(){
+    this.reloadComponent(false,"test/child")
   }
 
 

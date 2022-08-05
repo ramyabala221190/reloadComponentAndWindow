@@ -22,7 +22,7 @@ export class ChildComponent extends CommonFunctionalityComponent implements OnIn
    this.reloadComponent(false,'test');
      }
 
-    reloadSelf(){
+     reloadCurrent(){
       this.reloadComponent(true);
      }
 
